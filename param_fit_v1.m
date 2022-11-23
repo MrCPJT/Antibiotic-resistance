@@ -1,4 +1,4 @@
-%% 16.11.22 - Connor Tynan - Parameter fitting - Stefano data
+%% 16.11.22 - Connor Tynan - Parameter fitting - Stefano data - MATLAB
 %
 % Description: First attempt at fitting bacterial growth data to gLV equations
 %
