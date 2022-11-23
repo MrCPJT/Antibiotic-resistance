@@ -23,8 +23,8 @@ Final year project investigating the quantification of microbial interactions, p
      
 ### Data fitting
 - Given novel mono and co-culture data for two bacterial species; attempted to fit the data to existing models (gLV and pairwise) using a collection of different methods, including:
-  - Non-linear least-squares regression
-  -
+  - Ordinary least-squares regression (MATLAB)
+  - Bayesian Inferencing (R, Stan)
  
  
  
