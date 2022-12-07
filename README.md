@@ -1,9 +1,9 @@
 # Final year project
 Final year project investigating the quantification of microbial interactions, particularly in quantifying dynamic growth rates and interactivity parameters. 
 
-## Timeline
+## Timeline and Details
 
-### Literature review
+### Literature review 
 - Reading of relevant literature - Getting a feel for the field
 ### Reproduction of literature results:
 - 11D generalized Lotka-Volterra (gLV) model [1,2,3]
@@ -22,14 +22,15 @@ Final year project investigating the quantification of microbial interactions, p
      - In the second case, we considered different scenarios (mutualism, competition, predation), based on initial conditions and interactivity parameters, and investigated how such can affect the system's dynamics.
      
 ### Data fitting
-- Given novel mono and co-culture data for two bacterial species; attempted to fit the data to existing models (gLV and pairwise) using a collection of different methods, including:
-  - Ordinary least-squares regression (MATLAB)
-    - Make sensible assumptions and approximations to paramater values -> Iterrate through pairs of estimate parameters to find minimum distance -> Update search
-    - Requires a lot of manual exploration (updating of parameters, exploring parameter space for minimum, etc)
-  - Bayesian Inferencing (R, Stan)
-    - Inferencing conducted using R and RStan package.
-    - MCMC sampling/estimates are enabled through RStan (usually requiring C++, powerful)
-    - Sampling requires a master 'R script' and a respective 'Stan file' to call (details can be found in the repository)
+Given novel mono and co-culture data for two bacterial species; attempted to fit the data to existing models (gLV and pairwise) using a collection of different methods, including:
+- Ordinary least-squares regression (MATLAB)
+  - Make sensible assumptions and approximations to paramater values -> Iterrate through pairs of estimate parameters to find minimum distance -> Update search
+  - Requires a lot of manual exploration (updating of parameters, exploring parameter space for minimum, etc)
+
+- Bayesian Inferencing (R, Stan)
+  - Inferencing conducted using R and RStan package.
+  - MCMC sampling/estimates are enabled through RStan (powerful and robust - usually requiring C++)
+  - Sampling requires a master 'R script' and a respective 'Stan file' to call (details can be found in the repository)
  
  
  
