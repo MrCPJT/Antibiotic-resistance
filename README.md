@@ -24,7 +24,12 @@ Final year project investigating the quantification of microbial interactions, p
 ### Data fitting
 - Given novel mono and co-culture data for two bacterial species; attempted to fit the data to existing models (gLV and pairwise) using a collection of different methods, including:
   - Ordinary least-squares regression (MATLAB)
+    - Make sensible assumptions and approximations to paramater values -> Iterrate through pairs of estimate parameters to find minimum distance -> Update search
+    - Requires a lot of manual exploration (updating of parameters, exploring parameter space for minimum, etc)
   - Bayesian Inferencing (R, Stan)
+    - Inferencing conducted using R and RStan package.
+    - MCMC sampling/estimates are enabled through RStan (usually requiring C++, powerful)
+    - Sampling requires a master 'R script' and a respective 'Stan file' to call (details can be found in the repository)
  
  
  
@@ -33,4 +38,10 @@ Final year project investigating the quantification of microbial interactions, p
  - [2] https://doi.org/10.1371/journal.pcbi.1006001
  - [3] https://doi.org/10.1103/PhysRevE.99.032403
  - [4] http://dx.doi.org/10.7554/eLife.25051
+ 
+ ## Useful resources for R, RStan, Stan
+ - https://shug3502.github.io/blog/DifferentialEqnsStan
+ - https://betanalpha.github.io/assets/case_studies/markov_chain_monte_carlo.html#1_hello_monte_carlo_our_old_friend
+ - https://alexanderetz.com/2015/07/25/understanding-bayes-updating-priors-via-the-likelihood/
+ - General documentation + Stack exchange
  
