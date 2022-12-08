@@ -44,5 +44,6 @@ Given novel mono and co-culture data for two bacterial species; attempted to fit
  - https://shug3502.github.io/blog/DifferentialEqnsStan
  - https://betanalpha.github.io/assets/case_studies/markov_chain_monte_carlo.html#1_hello_monte_carlo_our_old_friend
  - https://alexanderetz.com/2015/07/25/understanding-bayes-updating-priors-via-the-likelihood/
+ - https://mc-stan.org/users/documentation/case-studies/lotka-volterra-predator-prey.html
  - General documentation + Stack exchange
  
