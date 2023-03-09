@@ -32,7 +32,8 @@ Given novel mono and co-culture data for two bacterial species; attempted to fit
   - MCMC sampling/estimates are enabled through RStan (powerful and robust - usually requiring C++)
   - Sampling requires a master 'R script' and a respective 'Stan file' to call (details can be found in the repository)
  
- 
+ ### Systems Analysis
+ Having generated some parameter estimates we can investigate the underlying dynamics behind S.Aureus and P.Aeruginosa interactions. We first analytically investigate the generalised Lotka-Volterra equations and demonstrate some of the expected behaviour for our 2D system.
  
  ## References
  - [1] https://doi.org/10.1371/journal.pcbi.1003388
