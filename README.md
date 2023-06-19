@@ -1,10 +1,9 @@
 # Final year project
-Final year project investigating the quantification of microbial interactions, particularly in quantifying dynamic growth rates and interactivity parameters. 
-
+Final year project concerned with unstanding the microbial interactions between _Staphylococcus aureus_ and _Pseudomonas aeruginosa_, in co-culture.
 ## Timeline and Details
 
 ### Literature review 
-- Reading of relevant literature - Getting a feel for the field
+- Gentle introduction to general literature: key definitions (microbes, microbial communities, etc.), introduction of _S. aureus_ and _P. aeruginosa_ (what they are, why they are important, motivations behind understanding interactions between the two, etc.), background information and a brief history on microbial interactions, , outline of existing mathematical models, 
 ### Reproduction of literature results:
 - 11D generalized Lotka-Volterra (gLV) model [1,2,3]
   - Solved the system of ODEs using initial conditions and parameter estimates from existing literature [1]
