@@ -1,29 +1,34 @@
 # Final year project
-Final year project concerned with unstanding the microbial interactions between _Staphylococcus aureus_ and _Pseudomonas aeruginosa_, in co-culture.
+Final year project concerned with understanding the microbial interactions between _Staphylococcus aureus_ and _Pseudomonas aeruginosa_ in co-culture.
 ## Timeline and Details
 
+### Experimental Data
+- For this project I had the opportunity to work with novel _S. aureus_ and _P. aeruginosa_ mono and co-culture data. The data (.csv) is featured above and features a mono and co-culture case for both _S. aureus_ and _P. aeruginosa_ with each case including 6 replicates to identify any outliers.
+
 ### Literature review 
-- Gentle introduction to general literature: key definitions (microbes, microbial communities, etc.), introduction of _S. aureus_ and _P. aeruginosa_ (what they are, why they are important, motivations behind understanding interactions between the two, etc.), background information and a brief history on microbial interactions, , outline of existing mathematical models, 
+- Gentle introduction to general literature: key definitions (microbes, microbial communities, etc.), introduction of _S. aureus_ and _P. aeruginosa_ (what they are, why they are important, motivations behind understanding interactions between the two, etc.), background information and a brief history on microbial interactions.
 ### Reproduction of literature results:
+The purpose of this step was to improve my understanding of existing models by implementing them myself. Not all of the points mentioned below made it into the final report but were interesting to investigate nonetheless.
+
 - 11D generalized Lotka-Volterra (gLV) model [1,2,3]
   - Solved the system of ODEs using initial conditions and parameter estimates from existing literature [1]
   - Extended the basic gLV equations to include a perturbation / sensitivity term [1]
-  - Investigated the importance of timing when issuing fecal microbiota transplant (FMT) [3]
+  - Investigated the importance of timing when issuing feacal microbiota transplant (FMT) [3]
   - Considered varying interactivity parameters at each time step using a 1D random walk
-  - Analysed system dynamics (mostly identification and classifcation of steady states) [2,3]
+  - Analysed system dynamics (mostly identification and classification of steady states) [2,3]
   
  - Mechanistic and pairwise models [4]
     - Evaluated and compared pairwise and mechanistic equations for the following cases:
-      - 2 Species interacting via a single consumable metabolite (S1 -> C1 -> S2)
-      - 2 Species interacting via two consumable metabolites (More complex interactions
+      - 2 Species interacting via a single consumable metabolite (S1 -> C1 -> S2)*
+      - 2 Species interacting via two consumable metabolites (More complex interactions)**
 
-     - In our first case, the dynamics are relatively straight forward and didn't warrant further investigation. One may additionally consider the case of **reusable** chemical mediators, but such was not discussed in the literature.
-     - In the second case, we considered different scenarios (mutualism, competition, predation), based on initial conditions and interactivity parameters, and investigated how such can affect the system's dynamics.
+     - *In our first case, the dynamics are relatively straight forward and didn't warrant further investigation. One may additionally consider the case of **reusable** chemical mediators, but such was not discussed in the literature.
+     - **In the second case, we considered different scenarios (mutualism, competition, predation), based on initial conditions and interactivity parameters, and investigated how such can affect the system's dynamics.
      
-### Data fitting
-Given novel mono and co-culture data for two bacterial species; attempted to fit the data to existing models (gLV and pairwise) using a collection of different methods, including:
-- Ordinary least-squares regression (MATLAB)
-  - Make sensible assumptions and approximations to paramater values -> Iterrate through pairs of estimate parameters to find minimum distance -> Update search
+### Parameter Estimation
+Given novel mono and co-culture data for two microbial species we estimated parameter values for existing models (gLV):
+- Least-squares regression (MATLAB)
+  - Make sensible assumptions and approximations to parameter values -> Iterate through pairs of estimate parameters to find minimum distance -> Update search
   - Requires a lot of manual exploration (updating of parameters, exploring parameter space for minimum, etc)
 
 - Bayesian Inferencing (R, Stan)
@@ -32,7 +37,7 @@ Given novel mono and co-culture data for two bacterial species; attempted to fit
   - Sampling requires a master 'R script' and a respective 'Stan file' to call (details can be found in the repository)
  
  ### Systems Analysis
- Having generated some parameter estimates we can investigate the underlying dynamics behind S.Aureus and P.Aeruginosa interactions. We first analytically investigate the generalised Lotka-Volterra equations and demonstrate some of the expected behaviour for our 2D system.
+ Having generated some parameter estimates we can investigate the underlying dynamics behind S.Aureus and P.Aeruginosa interactions. We first analytically investigate the generalised Lotka-Volterra equations and discuss some of the expected behaviour for our 2D system. 
  
  ## References
  - [1] https://doi.org/10.1371/journal.pcbi.1003388
