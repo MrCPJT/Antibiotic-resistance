@@ -13,7 +13,7 @@ The purpose of this step was to improve my understanding of existing models by i
 - 11D generalized Lotka-Volterra (gLV) model [1,2,3]
   - Solved the system of ODEs using initial conditions and parameter estimates from existing literature [1]
   - Extended the basic gLV equations to include a perturbation / sensitivity term [1]
-  - Investigated the importance of timing when issuing feacal microbiota transplant (FMT) [3]
+  - Investigated the importance of timing when issuing faecal microbiota transplant (FMT) [3]
   - Considered varying interactivity parameters at each time step using a 1D random walk
   - Analysed system dynamics (mostly identification and classification of steady states) [2,3]
   
@@ -37,7 +37,7 @@ Given novel mono and co-culture data for two microbial species we estimated para
   - Sampling requires a master 'R script' and a respective 'Stan file' to call (details can be found in the repository)
  
  ### Systems Analysis
- Having generated some parameter estimates we can investigate the underlying dynamics behind S.Aureus and P.Aeruginosa interactions. We first analytically investigate the generalised Lotka-Volterra equations and discuss some of the expected behaviour for our 2D system. 
+ Having generated some parameter estimates we can investigate the underlying dynamics behind _S.Aureus_ and _P.Aeruginosa_ interactions. We first analytically investigate the generalised Lotka-Volterra equations and discuss some of the expected behaviour for our 2D system. 
  
  ## References
  - [1] https://doi.org/10.1371/journal.pcbi.1003388
