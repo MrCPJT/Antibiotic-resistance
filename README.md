@@ -7,16 +7,16 @@ Final year project concerned with understanding the microbial interactions betwe
 - Investigated underlying dynamics using steady-state analysis and bifurcation theory, finding a transcritical bifurcation to underpin changes in interactions
 
 ## Project Details
-(Please see PDF file for additional details)
+> Please see PDF file for additional details.
 
 ### Experimental Data
-- For this project I had the opportunity to work with novel _S. aureus_ and _P. aeruginosa_ mono and co-culture data. The data (.csv) is featured above and includes a mono and co-culture case for both _S. aureus_ and _P. aeruginosa_ with each case including 6 replicates.
+- For this project I had the opportunity to work with novel _S. aureus_ and _P. aeruginosa_ mono and co-culture data. The data (.csv) is featured above and includes a mono and co-culture case for both _S. aureus_ and _P. aeruginosa_ with each case including 6 replicates
 
 ### Literature review 
-- Gentle introduction to surrounding literature: key definitions (microbes, microbial communities, etc.), introduction of _S. aureus_ and _P. aeruginosa_ (what they are, why they are important, motivations behind understanding interactions between the two, etc.), background information and a brief history on microbial interactions.
+- Gentle introduction to surrounding literature: key definitions (microbes, microbial communities, etc.), introduction of _S. aureus_ and _P. aeruginosa_ (what they are, why they are important, motivations behind understanding interactions between the two, etc.), background information and a brief history on microbial interactions
 
 ### Reproduction of literature results:
-(The purpose of this step was to improve my understanding of existing models by implementing them myself. Not all of the points mentioned below made it into the final report but were interesting to investigate nonetheless.)
+> The purpose of this step was to improve my understanding of existing models by implementing them myself. Not all of the points mentioned below made it into the final report but were interesting to investigate nonetheless.
 
 - 11D generalized Lotka-Volterra (gLV) model [1,2,3]
   - Solved the system of ODEs using initial conditions and parameter estimates from existing literature [1]
@@ -45,7 +45,7 @@ Final year project concerned with understanding the microbial interactions betwe
 - Analytically investigated the gLV equations, finding the nullclines and equilibria of our model
   
 ### Dynamical Systems Analysis
-- Classified stability of equilibrium points and discussed what different behaviour cases translate to
+- Classified stability of equilibrium points and discussed what different behaviour cases translates to
 - Touched on bifurcation theory and what qualitative changes we might expect our system to demonstrate before performing bifurcation analysis using MATCONT
  
  ## References
