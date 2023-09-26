@@ -1,17 +1,22 @@
-# Final year project
+# Mathematically-Modelling-Microbial-Interactions
 Final year project concerned with understanding the microbial interactions between _Staphylococcus aureus_ and _Pseudomonas aeruginosa_ in co-culture.
+
+## Summary
+- Performed an extensive literature review, implemented existing models and reproduced results to establish an initial understanding of the field
+- Preprocessed microbial growth data before fitting to an existing mathematical model using the Hamiltonian Monte Carlo algorithm, validating fits using MCMC convergence diagnostics
+- Investigated underlying dynamics using steady-state analysis and bifurcation theory, finding a transcritical bifurcation to underpin changes in interactions
 
 ## Project Details
 (Please see PDF file for additional details)
 
 ### Experimental Data
-- For this project I had the opportunity to work with novel _S. aureus_ and _P. aeruginosa_ mono and co-culture data. The data (.csv) is featured above and features a mono and co-culture case for both _S. aureus_ and _P. aeruginosa_ with each case including 6 replicates to identify any outliers.
+- For this project I had the opportunity to work with novel _S. aureus_ and _P. aeruginosa_ mono and co-culture data. The data (.csv) is featured above and includes a mono and co-culture case for both _S. aureus_ and _P. aeruginosa_ with each case including 6 replicates.
 
 ### Literature review 
-- Gentle introduction to general literature: key definitions (microbes, microbial communities, etc.), introduction of _S. aureus_ and _P. aeruginosa_ (what they are, why they are important, motivations behind understanding interactions between the two, etc.), background information and a brief history on microbial interactions.
+- Gentle introduction to surrounding literature: key definitions (microbes, microbial communities, etc.), introduction of _S. aureus_ and _P. aeruginosa_ (what they are, why they are important, motivations behind understanding interactions between the two, etc.), background information and a brief history on microbial interactions.
 
 ### Reproduction of literature results:
-The purpose of this step was to improve my understanding of existing models by implementing them myself. Not all of the points mentioned below made it into the final report but were interesting to investigate nonetheless.
+(The purpose of this step was to improve my understanding of existing models by implementing them myself. Not all of the points mentioned below made it into the final report but were interesting to investigate nonetheless.)
 
 - 11D generalized Lotka-Volterra (gLV) model [1,2,3]
   - Solved the system of ODEs using initial conditions and parameter estimates from existing literature [1]
@@ -23,23 +28,32 @@ The purpose of this step was to improve my understanding of existing models by i
      
      - 2 Species interacting via a single consumable metabolite
      - 2 Species interacting via two consumable metabolites
+
+### Preparing the Data
+- Calculated averages (partly to eliminate null values) and performed normalisation improving the data quality
+
+### Model Discussion
+- Introduced the model of choice (gLV) and discussed relevant reparameterisations and parameter constraints
      
 ### Parameter Estimation
-Given novel mono and co-culture data for two microbial species we estimated parameter values for existing models (gLV):
-- Bayesian Inferencing (R, Stan)
+- Performed Bayesian inferencing (using RStudio and Stan) to estimate unknown model weights
   
-  - Inferencing conducted using R and RStan package.
   - MCMC sampling/estimates are enabled through RStan (powerful and robust - usually requiring C++)
-  - Sampling requires a master 'R script' and a respective 'Stan file' to call (details can be found in the repository)
- 
-### Systems Analysis
-Having generated some parameter estimates we can investigate the underlying dynamics behind _S.Aureus_ and _P.Aeruginosa_ interactions. We first analytically investigate the generalised Lotka-Volterra equations and discuss some of the expected behaviour for our 2D system. 
+  - Sampling requires a master `.R script` and a respective `.stan file` to call (see [5] for more information)
+
+### Steady-State Analysis
+- Analytically investigated the gLV equations, finding the nullclines and equilibria of our model
+  
+### Dynamical Systems Analysis
+- Classified stability of equilibrium points and discussed what different behaviour cases translate to
+- Touched on bifurcation theory and what qualitative changes we might expect our system to demonstrate before performing bifurcation analysis using MATCONT
  
  ## References
  - [1] https://doi.org/10.1371/journal.pcbi.1003388
  - [2] https://doi.org/10.1371/journal.pcbi.1006001
  - [3] https://doi.org/10.1103/PhysRevE.99.032403
  - [4] http://dx.doi.org/10.7554/eLife.25051
+ - [5] https://mc-stan.org/rstan/reference/stan.html
  
  ## Useful resources for R, RStan, Stan
  - https://shug3502.github.io/blog/DifferentialEqnsStan
@@ -47,4 +61,3 @@ Having generated some parameter estimates we can investigate the underlying dyna
  - https://alexanderetz.com/2015/07/25/understanding-bayes-updating-priors-via-the-likelihood/
  - https://mc-stan.org/users/documentation/case-studies/lotka-volterra-predator-prey.html
  - General documentation + Stack exchange
- 
