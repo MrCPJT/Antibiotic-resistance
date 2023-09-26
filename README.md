@@ -55,7 +55,7 @@ Final year project concerned with understanding the microbial interactions betwe
  - [4] http://dx.doi.org/10.7554/eLife.25051
  - [5] https://mc-stan.org/rstan/reference/stan.html
  
- ## Useful resources for R, RStan, Stan
+ ## Useful Resources for R, RStan, Stan
  - https://shug3502.github.io/blog/DifferentialEqnsStan
  - https://betanalpha.github.io/assets/case_studies/markov_chain_monte_carlo.html#1_hello_monte_carlo_our_old_friend
  - https://alexanderetz.com/2015/07/25/understanding-bayes-updating-priors-via-the-likelihood/
