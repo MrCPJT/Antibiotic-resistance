@@ -1,6 +1,6 @@
 # Final year project
 Final year project concerned with understanding the microbial interactions between _Staphylococcus aureus_ and _Pseudomonas aeruginosa_ in co-culture.
-## Timeline and Details
+## Project Details
 
 ### Experimental Data
 - For this project I had the opportunity to work with novel _S. aureus_ and _P. aeruginosa_ mono and co-culture data. The data (.csv) is featured above and features a mono and co-culture case for both _S. aureus_ and _P. aeruginosa_ with each case including 6 replicates to identify any outliers.
