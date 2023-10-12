@@ -15,7 +15,7 @@ Final year project concerned with understanding the microbial interactions betwe
 ### Literature review 
 - Gentle introduction to surrounding literature: key definitions (microbes, microbial communities, etc.), introduction of _S. aureus_ and _P. aeruginosa_ (what they are, why they are important, motivations behind understanding interactions between the two, etc.), background information and a brief history on microbial interactions
 
-### Reproduction of literature results:
+### Reproduction of literature results
 > The purpose of this step was to improve my understanding of existing models by implementing them myself. Not all of the points mentioned below made it into the final report but were interesting to investigate nonetheless.
 
 - 11D generalized Lotka-Volterra (gLV) model [1,2,3]
